@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #202124;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-bg {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: right;
+  background-image: url('../img/sasuke.png');
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.containerH1 {
+  margin: 40px 0;
+  display: flex;
+  width: 100%;
+ justify-content: center;
+}
+
+.containerH1 h1 {
+  font-size: 40px;
+}
+
+.container span {
+  font-size: 14px;
+}
+
+.container > .anime {
+  display: inline-block;
+  width: 127px;
+  height: 189px;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container img:hover {
+  filter: grayscale(50%);
+}
+
+.modalAnime {
+  position: fixed;
+  left: 50%;
+  background: #303030;
+  color: #fff;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 5%;
+  transform: translate(-50%);
+  max-height: 80%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.blur {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 60%;
+  overflow: hidden;
+  left: 0%;
+  background: transparent;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 0%;
+  z-index: 100000;
+}
+
+.modalAnime {
+  overflow: auto;
+}
+
+.imageModal {
+  width: 127px;
+  height: 189px;
+  border: 2px solid #fff;
+}
+
+.nomeModal {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.containerModal {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.listModal {
+  list-style: none;
+}
+
+.listModal li {
+  margin-bottom: 13px;
+}
+
+.modalEps {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+} 
+
+@media (max-width: 600px) {
+  .container {
+  }
+
+  .container > .anime {
+    width: calc(100vw / 1);
+    margin-left: 1%;
+  }
+}
