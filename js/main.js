@@ -1,10 +1,10 @@
 function caixetaAnime(link, titulo){
-fetch(`http://167.114.82.198:3333/${link}`)
+fetch(`https://nekowatchapi1.herokuapp.com/${link}`)
 
 .then(response => response.json())
 
 .then(json => {
-  console.log(json)
+  // console.log(json)
   document.querySelector('.container').innerHTML += `
   <div class="containerH1">
   <h1>${titulo}</h1>
@@ -46,7 +46,7 @@ function caixetaId(id) {
   .then(response => response.json())
   
   .then(json => {
-    console.log(json)
+    // console.log(json)
     document.querySelector('.atrasAnime .modalAnime').innerHTML = `
     <h1 class="nomeModal">${json.nome}</h1>
     <div class="containerModal">
@@ -96,7 +96,7 @@ function caixetaVideoId(idVideo) {
   fetch(`http://167.114.82.198:3333/video/${idVideo}`)
   .then(response => response.json())
   .then(json => {
-    console.log(json)
+    // console.log(json)
     document.querySelector(`.atasVideo`).style.display = `block`
     document.querySelector('.atasVideo .videoAnime').innerHTML = `
     <iframe allowfullscreen
