@@ -1,5 +1,5 @@
 function caixetaAnime(link, titulo){
-fetch(`http://167.114.82.198:3333/${link}`)
+fetch(`https://167.114.82.198:3333/${link}`)
 
 .then(response => response.json())
 
