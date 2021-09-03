@@ -14,7 +14,7 @@ body {
   height: 300px;
   background-size: cover;
   background-position: right;
-  background-image: url('../img/sasuke.png');
+  background-image: url("../img/sasuke.png");
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
   margin: 40px 0;
   display: flex;
   width: 100%;
- justify-content: center;
+  justify-content: center;
 }
 
 .containerH1 h1 {
@@ -69,6 +69,7 @@ body {
   top: 5%;
   transform: translate(-50%);
   max-height: 80%;
+  z-index: 100;
 }
 
 ::-webkit-scrollbar {
@@ -88,14 +89,63 @@ body {
   position: fixed;
   width: 100%;
   display: none;
-  height: 60%;
+  height: 190%;
+  overflow: hidden;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 0%;
+  z-index: 100000;
+}
+
+#close {
+  z-index: 20000;
+  right: 0;
+  padding: 10px;
+  font-size: 30px;
+  top: 0;
+  position: absolute;
+}
+
+.blurVideo {
+  position: fixed;
+  width: 100%;
+  display: block;
+  height: 190%;
+  overflow: hidden;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 0%;
+  z-index: 100000;
+}
+
+.blurAnime {
+  position: fixed;
+  width: 100%;
+  display: block;
+  height: 100%;
   overflow: hidden;
   left: 0%;
   background: transparent;
   box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
   padding: 20px;
   top: 0%;
-  z-index: 100000;
+}
+
+.videoAnime {
+  position: fixed;
+  width: 100%;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  left: 0%;
+  background: transparent;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 0%;
 }
 
 .modalAnime {
@@ -133,7 +183,7 @@ body {
   padding: 10px;
   font-size: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.075);
-} 
+}
 
 @media (max-width: 600px) {
   .container {
