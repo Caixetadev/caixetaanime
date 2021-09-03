@@ -42,7 +42,7 @@ document.querySelectorAll('.blurAnime').forEach((me) =>{
 })
 
 function caixetaId(id) {
-  fetch(`http://167.114.82.198:3333/anime/${id}`)
+  fetch(`https://nekowatchapi1.herokuapp.com/anime/${id}`)
   .then(response => response.json())
   
   .then(json => {
@@ -93,7 +93,7 @@ function caixetaId(id) {
 }
 
 function caixetaVideoId(idVideo) {
-  fetch(`http://167.114.82.198:3333/video/${idVideo}`)
+  fetch(`https://nekowatchapi1.herokuapp.com/video/${idVideo}`)
   .then(response => response.json())
   .then(json => {
     // console.log(json)
